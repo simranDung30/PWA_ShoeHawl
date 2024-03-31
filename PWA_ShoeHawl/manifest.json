@@ -1,0 +1,45 @@
+{
+    "name": "Shoes Hawl",
+    "short_name": "Shoes",
+    "start_url": "home.html",
+    "scope": "./",
+    "icons": [
+        {
+            "src": "images/hero.jpg",
+            "type": "image/jpg"
+        },
+        {
+            "src": "images/feature1.jpg",
+            "sizes": "512x512",
+            "type": "images/jpg"
+        },
+        {
+            "src": "images/feature2.png",
+            "sizes": "512x512",
+            "type": "images/png"
+        },
+        {
+            "src": "images/feature3.png",
+            "sizes": "512x512",
+            "type": "images/png"
+        },
+        {
+            "src": "images/shoe1.jpg",
+            "sizes": "512x512",
+            "type": "images/jpg"
+        },
+        {
+            "src": "images/shoe2.png",
+            "sizes": "512x512",
+            "type": "images/png"
+        },
+        {
+            "src": "images/shoe3.png",
+            "sizes": "512x512",
+            "type": "images/png"
+        }
+    ],
+    "theme_color": "#f1c3e4",
+    "background_color": "#f8f8f8",
+    "display": "standalone"
+}

@@ -1,0 +1,359 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    background-color: grey;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Chewy', cursive;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #0cb6fe;
+}
+
+.banner {
+    /* background-image: url('kids-fashion-banner.jpg'); */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner img {
+    width: 100%; /* Set the width to 100% of its container */
+    height: 65%; /* Maintain aspect ratio */
+    /* Add any additional styles as needed */
+}
+.banner {
+    position: relative; /* Ensure the container is relatively positioned */
+}
+
+.overlay-text {
+    position: absolute; /* Position the text absolutely within its container */
+    top: 50%; /* Position it in the middle vertically */
+    left: 50%; /* Position it in the middle horizontally */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    text-align: center; /* Align the text in the center */
+    color: white; /* Text color */
+}
+
+.overlay-text p {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #ffffff; /* Text color */
+    font-family: "Arial", sans-serif; /* Font family */
+    font-weight: bold; /* Font weight */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Adjust letter spacing */
+    margin-bottom: 20px; /* Add some space below the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+}
+
+
+.banner h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: grey;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f1c3e4;
+}
+
+.featured-products {
+    padding: 50px 0;
+}
+
+.featured-products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #f1c3e4;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f1c3e4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner h2 {
+        font-size: 2.5rem;
+    }
+
+    .banner p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+
+    .featured-products h2 {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .banner h2 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+
+    .featured-products h2 {
+        font-size: 1.8rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Add this CSS to your existing style.css file */
+
+.featured-products {
+    padding: 50px 0;
+}
+
+.featured-products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #f1c3e4;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+.product p {
+    color: #f1c3e4;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+/* Shop Page Styles */
+
+/* Shop by Category Section */
+.shop-categories {
+    background-color: #f1c3e4;
+    padding: 50px 0;
+}
+
+.shop-categories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.shop-categories ul {
+    list-style: none;
+    text-align: center;
+}
+
+.shop-categories ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.shop-categories ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.shop-categories ul li a:hover {
+    color: #0cb6fe;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 480px) {
+    .shop-categories h2 {
+        font-size: 1.8rem;
+    }
+
+    .shop-categories ul li a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Product Section Styles */
+.shop-product-section {
+    padding: 50px 0;
+}
+
+.shop-product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.shop-product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.shop-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.shop-product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.shop-product h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.shop-product p {
+    color: #f1c3e4;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .shop-categories h2 {
+        font-size: 2rem;
+    }
+
+    .shop-categories ul li a {
+        font-size: 1rem;
+    }
+
+    .shop-product h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .shop-categories h2 {
+        font-size: 1.8rem;
+    }
+
+    .shop-categories ul li a {
+        font-size: 0.9rem;
+    }
+
+    .shop-product h3 {
+        font-size: 1rem;
+    }
+}
